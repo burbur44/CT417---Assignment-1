@@ -1,8 +1,3 @@
-/**
- *
- * @author Mary Adedeji
- */
-
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
