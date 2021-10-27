@@ -1,56 +1,43 @@
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class StudentTest {
 
-    //iniliasing variables
-    private Module EE321, MD123,NS456, AC789;
-    private Student Monica, Adam, Victoria, John;
+    private Module Ct252, ct101,ct331, ct567;
+    private Student James, John , Sam, Bob;
 
-    /**
-     *
-     */
-    public StudentTest() {
-    }
-
-    /**
-     *
-     */
     @Test
     public void testGenerateUserName() {
 
+        Course course  = new Course("Pro3", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
+        Course course1 = new Course("Math4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
+        Course course2 = new Course("ENG3", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
+        Course course3 = new Course("Chem4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
 
+        Ct252 = new Module("Pro3","Programming");
+        ct101 = new Module("Math4","maths");
+        ct331 = new Module("ENG3","Engineering");
+        ct567 = new Module("Chem4","Chemistry");
 
-        Course course  = new Course("ENG4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
-        Course course1 = new Course("MED4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
-        Course course2 = new Course("ACC4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
-        Course course3 = new Course("NUS4", new DateTime(2020,10,9,0,0),new DateTime(2021,6,4,0,0));
-
-        EE321 = new Module("ENG4","Programming");
-        MD123 = new Module("MED4","Anatomy");
-        NS456 = new Module("ACC4","Auditing");
-        AC789 = new Module("NUS4","Chemistry");
-
-        course.addModules(EE321);
-        course1.addModules(MD123);
-        course2.addModules(NS456);
-        course3.addModules(AC789);
+        course.addModules(Ct252);
+        course1.addModules(ct101);
+        course2.addModules(ct331);
+        course3.addModules(ct567);
 
         DateTime todayDate = new DateTime(2021, 10, 12, 12, 0); //set current Date
 
-        Monica = new Student("Monica",new DateTime(1996,9,12,0,0),"Engineering", 123456);
-        Victoria = new Student("Victoria",new DateTime(1997,8,6,0,0),"Medicine", 1345678);
-        Adam = new Student("Adam",new DateTime (1996, 7, 14, 0,0),"Nursing", 1456789);
-        John = new Student("John",new DateTime (1995,10,19,0,0), "Accounting", 1567890);
+        James = new Student("James",new DateTime(2002,4,12,0,0),"Programming", 1456);
+        John = new Student("John",new DateTime(1999,6,4,0,0),"maths", 2432);
+        Sam = new Student("Sam",new DateTime (2000, 8, 5, 0,0),"Engineering", 4324);
+        Bob = new Student("Bob",new DateTime (2001,10,5,0,0), "Chemistry", 4321);
 
 
-        assertEquals("Monica25",Monica.getUserName(todayDate));
-        assertEquals("Victoria23",Victoria.getUserName(todayDate));   //verfiy getUserName method
-        assertEquals("Adam24",Adam.getUserName(todayDate));
-        assertEquals("John25",John.getUserName(todayDate));
+        assertEquals("Monica25",James.getUserName(todayDate));
+        assertEquals("Victoria24",John.getUserName(todayDate));   //verify getUserName method
+        assertEquals("Adam25",Sam.getUserName(todayDate));
+        assertEquals("John26",Bob.getUserName(todayDate));
 
 
     }

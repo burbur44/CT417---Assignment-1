@@ -8,20 +8,13 @@ import java.util.List;
 
 
 public class Student {
-    // initialising variables
     private String studentName;
     private int age;
     private DateTime DOB;
-    private int studentID;
+    private final int studentID;
     private String userName;
     private String courseName;
-
-
     private List<Module> modules = new ArrayList<>();
-
-
-    //constructor
-
 
     public Student(String name ,DateTime DOB, String course, int id){
         this.studentName = name;
@@ -31,38 +24,27 @@ public class Student {
 
     }
 
-    //accessor and mutator methods
-
-
     public String getStudentName(){
-
         return studentName;
-
     }
 
     public void setStudentName(String studentName){
-
         this.studentName = studentName;
     }
 
 
 
     public DateTime getDOB(){
-
         return DOB;
-
     }
 
     public void setDOB(DateTime DOB){
-
         this.DOB = DOB;
     }
 
     private int getAge(DateTime todayDate) {
         Period period = new Period(DOB, DateTime.now());
         return period.getYears();
-
-
     }
 
     public void setAge(int age){
@@ -77,25 +59,21 @@ public class Student {
 
 
     public String getCourseName(){
-
         return courseName;
     }
 
     public void setCourseName(String courseName){
-
         this.courseName = courseName;
     }
     public List<Module> getModules(){
-
         return modules;
     }
 
     public void setModule(List<Module>modules){
-
         this.modules = modules;
     }
 
-    //tostring method to print out Student details such as name , age etc
+    //tostring method  print out Student details
     @Override
     public String toString(){
 

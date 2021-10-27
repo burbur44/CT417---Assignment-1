@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,12 +13,7 @@ public class Module {
         moduleName = Modulename;
         moduleID = ID;
 
-
-
     }
-
-//accessor and mutator methods
-
     public String getModuleName(){
         return moduleName;
     }

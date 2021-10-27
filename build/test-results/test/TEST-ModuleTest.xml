@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ModuleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-27T10:24:36" hostname="DESKTOP-8U0MBOR" time="0.064">
+  <properties/>
+  <testcase name="addMethods()" classname="ModuleTest" time="0.064"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
