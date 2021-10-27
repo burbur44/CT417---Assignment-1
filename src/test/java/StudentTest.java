@@ -34,12 +34,12 @@ public class StudentTest {
         NS456 = new Module("ACC4","Auditing");
         AC789 = new Module("NUS4","Chemistry");
 
-        course. addModules(EE321);
+        course.addModules(EE321);
         course1.addModules(MD123);
         course2.addModules(NS456);
         course3.addModules(AC789);
 
-        DateTime todayDate = new DateTime(2020, 11, 21, 0, 0); //set current Date
+        DateTime todayDate = new DateTime(2021, 10, 12, 12, 0); //set current Date
 
         Monica = new Student("Monica",new DateTime(1996,9,12,0,0),"Engineering", 123456);
         Victoria = new Student("Victoria",new DateTime(1997,8,6,0,0),"Medicine", 1345678);
@@ -47,7 +47,7 @@ public class StudentTest {
         John = new Student("John",new DateTime (1995,10,19,0,0), "Accounting", 1567890);
 
 
-        assertEquals("Monica24",Monica.getUserName(todayDate));
+        assertEquals("Monica25",Monica.getUserName(todayDate));
         assertEquals("Victoria23",Victoria.getUserName(todayDate));   //verfiy getUserName method
         assertEquals("Adam24",Adam.getUserName(todayDate));
         assertEquals("John25",John.getUserName(todayDate));

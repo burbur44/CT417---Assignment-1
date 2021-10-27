@@ -1,7 +1,4 @@
-/**
- *
- * @author Mary Adedeji
- */
+
 import java.util.ArrayList;
 import java.util.List;
 
