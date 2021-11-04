@@ -63,7 +63,6 @@ public class Module {
     }
 
 
-    //tostring method to print out Module details such as module name , students etc
     @Override
     public String toString(){
 

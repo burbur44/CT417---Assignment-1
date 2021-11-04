@@ -73,7 +73,6 @@ public class Student {
         this.modules = modules;
     }
 
-    //tostring method  print out Student details
     @Override
     public String toString(){
 

@@ -26,7 +26,7 @@ public class StudentTest {
         course2.addModules(ct331);
         course3.addModules(ct567);
 
-        DateTime todayDate = new DateTime(2021, 10, 12, 12, 0); //set current Date
+        DateTime todayDate = new DateTime(2021, 10, 12, 12, 0);
 
         James = new Student("James",new DateTime(2002,4,12,0,0),"Programming", 1456);
         John = new Student("John",new DateTime(1999,6,4,0,0),"maths", 2432);
@@ -35,7 +35,7 @@ public class StudentTest {
 
 
         assertEquals("Monica25",James.getUserName(todayDate));
-        assertEquals("Victoria24",John.getUserName(todayDate));   //verify getUserName method
+        assertEquals("Victoria24",John.getUserName(todayDate));
         assertEquals("Adam25",Sam.getUserName(todayDate));
         assertEquals("John26",Bob.getUserName(todayDate));
 

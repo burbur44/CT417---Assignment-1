@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Course {
 
-    private String courseName;                       //initialising variables
+    private String courseName;
     private List<Module> modules = new ArrayList<>();
     private List<Student> students = new ArrayList<>();
     private DateTime startDate;
@@ -20,7 +20,7 @@ public class Course {
 
 
     }
-    //accessor and mutator methods
+
     public String getCourseName(){
         return courseName;
 
@@ -84,7 +84,6 @@ public class Course {
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
     }
-    //tostring method to print out Course details such as name of course , start date etc
     @Override
     public String toString(){
 
